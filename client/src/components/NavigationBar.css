@@ -1,0 +1,100 @@
+.NavigationBar {
+    width: 100%;
+    height: 77px;
+    background-color: #4D5458;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    z-index: 50;
+}
+
+.NavigationBar-logo h2{
+    color: #E9F8FF;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.NavigationBar-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.NavigationBar-links li {
+    padding-left: 1.5rem;
+}
+
+.Cart-link {
+    background: #333333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.Cart-link:hover {
+    background-color: #89CFF0;
+}
+
+.NavigationBar-links li a {
+    text-decoration: none;
+    display: flex;
+    color: #E9F8FF;
+    font-size: 1.25rem;
+    align-items: center;
+}
+
+.NavigationBar-links li a span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.Cart-count {
+    width: 25px;
+    height: 25px;
+    background: #E9F8FF;
+    border-radius: 50%;
+    margin-left: 8px;
+    color: #4D5458;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.SideMenu {
+    width: 25px;
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.SideMenu div {
+    width: 100%;
+    height: 3px;
+    background-color: #E9F8FF;
+}
+
+.SideMenu:hover div {
+    background: #89CFF0;
+}
+
+@media (max-width: 960px) {
+    .NavigationBar-links {
+        display: none;
+    }
+
+    .SideMenu {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .NavigationBar-logo h2 {
+        font-size: 0.8rem;
+    }
+}
