@@ -1,0 +1,77 @@
+.SideBar {
+    width: 75%;
+    height: 100vh;
+    background-color: #E9F8FF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SideBar.show {
+    transform: translateX(0);
+}
+
+.SideBar-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.SideBar-links li {
+    display: flex;
+    align-items: center;
+}
+
+.SideBar-links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    text-decoration: none;
+    color: #4D5458;
+    font-size: 1.5rem;
+}
+
+.SideBar-links li a:hover {
+    background-color: #4D5458;
+    color: #E9F8FF;
+}
+
+.SideBar-links li a span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.Sidebar-cartCount {
+    width: 25px;
+    height: 25px;
+    background: #4D5458;
+    border-radius: 50%;
+    margin-left: 8px;
+    color: #E9F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.SideBar-links li a:hover .Sidebar-cartCount {
+    background: #E9F8FF;
+    color: #4D5458;
+}
+
+@media (min-width: 960px) {
+    .SideBar {
+        display: none;
+    }
+}

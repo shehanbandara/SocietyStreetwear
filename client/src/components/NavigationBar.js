@@ -1,7 +1,7 @@
 import './NavigationBar.css';
 import { Link } from 'react-router-dom';
 
-const NavigationBar = () => {
+const NavigationBar = ({ click }) => {
     return (
         <nav className="NavigationBar">
 
@@ -26,7 +26,7 @@ const NavigationBar = () => {
                 </li>
             </ul>
 
-            <div className='SideMenu'>
+            <div className='SideMenu' onClick={click}>
                 <div></div>
                 <div></div>
                 <div></div>
