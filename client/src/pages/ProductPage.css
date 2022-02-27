@@ -1,0 +1,79 @@
+.ProductPage {
+    max-width: 1300px;
+    margin: 1rem auto;
+    display: flex;
+}
+
+.ProductPage-left {
+    display: flex;
+    flex: 0.8;
+}
+
+.Left-image {
+    margin: 1rem;
+    flex: 0.6;
+}
+
+.Left-image img {
+    border-radius: 8px;
+}
+
+.Left-info {
+    margin: 1rem;
+    flex: 0.4;
+    background: #FFFFFF;
+    height: fit-content;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.Left-info-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.Left-info p, .Right-info p {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.Left-info p:last-child, .Right-info p:last-child {
+    border: none;
+} 
+
+.ProductPage-right {
+    flex: 0.2;   
+}
+
+.Right-info {
+    width: 250px;
+    margin: 1rem;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.Right-info p {
+    padding: 1rem;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Right-info p button {
+    grid-column: 1/-1;
+    padding: 10px 16px;
+    background-color: #333333;
+    color: #E9F8FF;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.Right-info p button:hover {
+    background-color: #89CFF0;
+}
+
+.Right-info p select {
+    padding: 10px 16px ;
+}
