@@ -18,9 +18,9 @@ function App() {
       <Backdrop show={sideBarToggle} click={() => setSideBarToggle(false)} />
       <main className="app">
         <Routes>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/product:id" component={ProductPage} />
-          <Route exact path="/cart" component={CartPage} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/product:id" element={<ProductPage />} />
+          <Route exact path="/cart" element={<CartPage />} />
         </Routes>
       </main>
     </BrowserRouter>
