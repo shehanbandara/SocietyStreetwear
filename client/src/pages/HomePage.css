@@ -13,4 +13,23 @@
 .HomePage-products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: baseline;
+}
+
+@media (max-width: 1300px) {
+    .HomePage-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    .HomePage-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 630px) {
+    .HomePage-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
