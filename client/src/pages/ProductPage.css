@@ -77,3 +77,32 @@
 .Right-info p select {
     padding: 10px 16px ;
 }
+
+@media (max-width: 950px) {
+    .ProductPage {
+        flex-direction: column;
+    }
+
+    .ProductPage-left {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .Left-image {
+        flex: 1;
+    }
+
+    .Left-info {
+        flex: 1;
+    }
+
+    .ProductPage-right {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .Right-info {
+        width: 100%;
+        margin: 0;
+    }
+}
